@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{  
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 100%; 
+	width:  100%;
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding:0;
+	width:  100%;
+	height: 100%;
+	background-image: url('../images/background.jpg');
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: #999;
+}
+ #animation_container, #_preload_div_ {
+	position:absolute;
+	margin:auto;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+#animation_container:{
+	background-color:rgba(0, 0, 0, 0.95); 
+	width:1920px; 
+	height:750px
+}
+#canvas{
+	width: 1920px; 
+	height: 750px;
+	position: absolute; 
+	display: none; 
+	background-color:rgba(0, 0, 0, 0.95);
+	border-top: 4px solid grey;
+	border-bottom: 4px solid grey;
+}
+#dom_overlay_container{
+	 pointer-events:none; 
+	 overflow:hidden; 
+	 width:1920px; 
+	 height:750px; 
+	 position: absolute; 
+	 left: 0px; 
+	 top: 0px; 
+	 display: none;"
+}
+#_preload_div_{
+	 position:absolute; 
+	 top:0; 
+	 left:0; 
+	 display: inline-block; 
+	 height:750px; 
+	 width: 1920px; 
+	 text-align: center;
+}
+#_preload_div_ span{
+	 display: inline-block; 
+	 height: 100%; 
+	 vertical-align: middle;
+}
+#_preload_div_ img{
+	 vertical-align: middle; 
+	 margin-right:40%; 
+	 max-height: 100%
+}
